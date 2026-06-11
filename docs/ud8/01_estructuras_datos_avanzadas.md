@@ -54,37 +54,39 @@ ArrayList<Integer> nums = new ArrayList<Integer>();
 ```java
 import java.util.ArrayList;
 
-ArrayList<String> bdz = new ArrayList<String>();
+ArrayList<String> dbz = new ArrayList<String>();
 
 // Añadir elementos
-bdz.add("Goku");     // índice 0
-bdz.add("Vegeta");   // índice 1
-bdz.add("Freezer");  // índice 2
+dbz.add("Goku");     // índice 0
+dbz.add("Vegeta");   // índice 1
+dbz.add("Freezer");  // índice 2
 
 // Insertar en posición concreta
-bdz.add(1, "Trunks");
+dbz.add(1, "Trunks");
 // → Goku | Trunks | Vegeta | Freezer
 
 // Recorrer con for clásico
-for (int i = 0; i < bdz.size(); i++) {
-    System.out.println(bdz.get(i));
+for (int i = 0; i < dbz.size(); i++) {
+    System.out.println(dbz.get(i));
 }
 
 // Recorrer con for-each (más recomendado)
-for (String personaje : bdz) {
+for (String personaje : dbz) {
     System.out.println(personaje);
 }
 
 // Eliminar por posición
-bdz.remove(2);           // elimina "Vegeta"
+dbz.remove(2);           // elimina "Vegeta"
 
 // Eliminar por valor
-bdz.remove("Freezer");
+dbz.remove("Freezer");
 
 // Vaciar la lista
-bdz.clear();
-System.out.println(bdz.size());  // 0
+dbz.clear();
+System.out.println(dbz.size());  // 0
 ```
+!!! info "Característica de ArrayList"
+    Hay que tener en cuenta que los **ArrayList** se reestructuran de forma automática después de un borrado de cualquiera de los elementos del array.
 
 ---
 
@@ -102,7 +104,7 @@ Un `HashMap` es un **diccionario**: almacena datos en pares **clave → valor**.
 ```java
 import java.util.HashMap;
 
-HashMap<Integer, String> bdz = new HashMap<Integer, String>();
+HashMap<Integer, String> dbz = new HashMap<Integer, String>();
 ```
 
 ### 8.3.2 Métodos principales
@@ -121,23 +123,23 @@ HashMap<Integer, String> bdz = new HashMap<Integer, String>();
 ```java
 import java.util.HashMap;
 
-HashMap<Integer, String> bdz = new HashMap<Integer, String>();
+HashMap<Integer, String> dbz = new HashMap<Integer, String>();
 
 // Insertar pares (clave, valor)
-bdz.put(123, "Goku");
-bdz.put(912, "Freezer");
-bdz.put(500, "Vegeta");
+dbz.put(123, "Goku");
+dbz.put(912, "Freezer");
+dbz.put(500, "Vegeta");
 
 // Obtener por clave
-System.out.println(bdz.get(912));  // Freezer
-System.out.println(bdz.get(112));  // null → clave inexistente
+System.out.println(dbz.get(912));  // Freezer
+System.out.println(dbz.get(112));  // null → clave inexistente
 
 // Mostrar todo el mapa
-System.out.println(bdz);           // {912=Freezer, 500=Vegeta, 123=Goku}
+System.out.println(dbz);           // {912=Freezer, 500=Vegeta, 123=Goku}
 // (el orden puede variar)
 
 // Recorrer con entrySet
-for (var entrada : bdz.entrySet()) {
+for (var entrada : dbz.entrySet()) {
     System.out.println(entrada.getKey() + " → " + entrada.getValue());
 }
 ```
@@ -243,8 +245,6 @@ Stack<String> historial = new Stack<String>();
 
 ### 8.5.3 Ejemplo completo
 
-![Ejemplo de Stack](img/imagen4.png){ .center }
-
 ```java
 import java.util.Stack;
 
@@ -261,6 +261,8 @@ System.out.println(historial.empty());  // false
 System.out.println(historial.pop());    // marca.com
 System.out.println(historial.empty());  // true
 ```
+
+![Ejemplo de Stack](img/imagen4.png){ .center }
 
 ---
 
@@ -300,8 +302,6 @@ Queue<String> cola = new LinkedList<String>();
 
 ### 8.6.3 Ejemplo completo
 
-![Ejemplo de Queue](img/imagen7.png){ .center }
-
 ```java
 import java.util.LinkedList;
 import java.util.Queue;
@@ -319,6 +319,8 @@ System.out.println(cola.isEmpty()); // false
 System.out.println(cola.poll());    // Luis
 System.out.println(cola.isEmpty()); // true
 ```
+
+![Ejemplo de Queue](img/imagen7.png){ .center }
 
 ---
 
