@@ -1,0 +1,1173 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Paco Guirau">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>03 ejercicios - Programación 1º DAW</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3-ejercicios" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Programación 1º DAW" class="md-header__button md-logo" aria-label="Programación 1º DAW" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programación 1º DAW
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              03 ejercicios
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud1/01_introduccion/" class="md-tabs__link">
+          
+  
+  
+  1 - Intro
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud2/01_sintaxis_basica/" class="md-tabs__link">
+          
+  
+  
+  2 - Java
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud3/01_estructuras_control/" class="md-tabs__link">
+          
+  
+  
+  3 - Est. Control
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud4/01_arrays_matrices_cadenas/" class="md-tabs__link">
+          
+  
+  
+  4 - Arrays
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud5/01_funciones_recursividad/" class="md-tabs__link">
+          
+  
+  
+  5 - Funciones
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud6/01_poo_objetos_clases/" class="md-tabs__link">
+          
+  
+  
+  6 - POO
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Programación 1º DAW" class="md-nav__button md-logo" aria-label="Programación 1º DAW" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Programación 1º DAW
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 - Intro
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1 - Intro
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud1/01_introduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 Introducción y primer programa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2 - Java
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2 - Java
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud2/01_sintaxis_basica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Tipos, variables, operadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3 - Est. Control
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3 - Est. Control
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud3/01_estructuras_control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 Estructuras de Selección y estructuras de repetición
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4 - Arrays
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    4 - Arrays
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud4/01_arrays_matrices_cadenas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.1 Arrays, Matrices y String
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 - Funciones
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    5 - Funciones
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud5/01_funciones_recursividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.1 Funciones y recursividad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6 - POO
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    6 - POO
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud6/01_poo_objetos_clases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.1 Objetos y clases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>03 ejercicios</h1>
+
+<h2 id="3-ejercicios">3. Ejercicios</h2>
+<hr />
+<h3 id="ejercicio-1-saludo-con-jframe">Ejercicio 1 — Saludo con JFrame</h3>
+<p>Crea una interfaz gráfica de <strong>640×480px</strong> donde el usuario escriba su nombre y al pulsar el botón "¡Saludar!" aparezca un mensaje en una etiqueta.</p>
+<p><strong>Componentes necesarios:</strong> <code>lblNombre</code>, <code>txtNombre</code>, <code>btnSaludar</code>, <code>lblMensaje</code></p>
+<p><strong>Requisitos:</strong>
+- Título del JFrame: <code>Ejercicio 1 – Saludos</code>
+- <code>defaultCloseOperation</code>: <code>EXIT_ON_CLOSE</code>
+- Centrar la ventana al arrancar: añade <code>setLocationRelativeTo(null);</code> justo después de <code>initComponents();</code>
+- Usar <strong>Absolute Layout</strong> (botón derecho sobre el formulario → <em>Set Layout → Absolute Layout</em>)
+- Si el campo de texto está vacío al pulsar el botón, mostrar un <code>JOptionPane</code> con el mensaje <code>"Por favor, escribe un nombre"</code></p>
+<p><strong>Extra:</strong> Añade un botón "Limpiar" que borre el texto del campo y el saludo de la etiqueta.</p>
+<hr />
+<h3 id="ejercicio-2-multiplicacion-con-validacion">Ejercicio 2 — Multiplicación con validación</h3>
+<p>Diseña una interfaz con dos campos de texto para introducir números. Al pulsar "Calcular" debe mostrarse el resultado de multiplicarlos.</p>
+<p><strong>Requisito:</strong> Implementa un <code>try-catch</code> para que, si el usuario escribe letras en lugar de números, aparezca un <code>JOptionPane.ERROR_MESSAGE</code> con un mensaje de error.</p>
+<hr />
+<h3 id="ejercicio-3-area-y-volumen-de-un-cubo">Ejercicio 3 — Área y volumen de un cubo</h3>
+<p>Crea un proyecto llamado <code>Cubo</code> con formulario de <strong>600×350px</strong> centrado en pantalla.</p>
+<p><strong>Componentes:</strong> <code>lblCubo</code> (con imagen), <code>lblArista</code>, <code>txtArista</code>, <code>btnCalcular</code>, <code>lblArea</code>, <code>txtArea</code>, <code>lblVolumen</code>, <code>txtVolumen</code></p>
+<ul>
+<li>Desactiva la propiedad <strong>Editable</strong> de <code>txtArea</code> y <code>txtVolumen</code></li>
+<li>Asigna color de fondo <code>[153, 255, 0]</code> a esos campos</li>
+<li>Carga el icono del cubo desde un package <code>images</code>:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Image</span><span class="w"> </span><span class="n">icono</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ImageIcon</span><span class="p">(</span><span class="n">getClass</span><span class="p">().</span><span class="na">getResource</span><span class="p">(</span><span class="s">&quot;/images/Cubo.png&quot;</span><span class="p">)).</span><span class="na">getImage</span><span class="p">();</span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">setIconImage</span><span class="p">(</span><span class="n">icono</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">Exception</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;No se pudo cargar el icono: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Al pulsar <strong>Calcular</strong>, obtén la arista del cuadro de texto y calcula:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">double</span><span class="w"> </span><span class="n">arista</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Double</span><span class="p">.</span><span class="na">parseDouble</span><span class="p">(</span><span class="n">txtArista</span><span class="p">.</span><span class="na">getText</span><span class="p">());</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">area</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">arista</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">arista</span><span class="p">;</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">volumen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arista</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">arista</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">arista</span><span class="p">;</span>
+<span class="n">txtArea</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">String</span><span class="p">.</span><span class="na">valueOf</span><span class="p">(</span><span class="n">area</span><span class="p">));</span>
+<span class="n">txtVolumen</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">String</span><span class="p">.</span><span class="na">valueOf</span><span class="p">(</span><span class="n">volumen</span><span class="p">));</span>
+</code></pre></div>
+<hr />
+<h3 id="ejercicio-4-hipotenusa-teorema-de-pitagoras">Ejercicio 4 — Hipotenusa (Teorema de Pitágoras)</h3>
+<p>Crea un proyecto <code>Hipotenusa</code>. El usuario introduce los dos catetos y al pulsar "Calcular" se obtiene la hipotenusa.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">double</span><span class="w"> </span><span class="n">cateto1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Double</span><span class="p">.</span><span class="na">parseDouble</span><span class="p">(</span><span class="n">txtCateto1</span><span class="p">.</span><span class="na">getText</span><span class="p">());</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">cateto2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Double</span><span class="p">.</span><span class="na">parseDouble</span><span class="p">(</span><span class="n">txtCateto2</span><span class="p">.</span><span class="na">getText</span><span class="p">());</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">hipotenusa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">sqrt</span><span class="p">(</span><span class="n">cateto1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cateto1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">cateto2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cateto2</span><span class="p">);</span>
+<span class="n">txtHipotenusa</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">String</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="s">&quot;%.2f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">hipotenusa</span><span class="p">));</span>
+</code></pre></div>
+<hr />
+<h3 id="ejercicio-5-resistencia-equivalente">Ejercicio 5 — Resistencia equivalente</h3>
+<p>Crea una aplicación que calcule la resistencia equivalente de un circuito con dos resistencias en <strong>serie</strong> o <strong>paralelo</strong>, seleccionando la opción mediante botones de radio (<code>JRadioButton</code>).</p>
+<p><strong>Fórmulas:</strong></p>
+<div class="highlight"><pre><span></span><code>Serie:    R_eq = R1 + R2
+Paralelo: R_eq = 1 / (1/R1 + 1/R2)
+</code></pre></div>
+<p><strong>Validaciones:</strong>
+- Todos los campos deben estar rellenos
+- Los valores deben ser positivos
+- Mostrar <code>JOptionPane</code> de error si no se cumplen las condiciones</p>
+<hr />
+<h3 id="ejercicio-6-lista-de-nombres-jlist">Ejercicio 6 — Lista de nombres (<code>JList</code>)</h3>
+<p>Crea una aplicación con un campo de texto, un botón "Insertar Nombre", un <code>JList</code> y un botón "Borrar Nombre".</p>
+<p><strong>Lógica:</strong>
+- Al pulsar "Insertar Nombre": si el campo está vacío, no inserta nada; si tiene texto, lo añade a la lista y limpia el campo
+- Al pulsar "Borrar Nombre": si no hay ningún elemento seleccionado, muestra un mensaje de error; si hay uno seleccionado, lo elimina</p>
+<p><strong>Código base para trabajar con <code>JList</code>:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Declarar el modelo (como atributo de la clase)</span>
+<span class="n">DefaultListModel</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">modelo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">DefaultListModel</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+
+<span class="c1">// Insertar un nombre</span>
+<span class="n">modelo</span><span class="p">.</span><span class="na">addElement</span><span class="p">(</span><span class="n">txtNombre</span><span class="p">.</span><span class="na">getText</span><span class="p">());</span>
+<span class="n">lstNombres</span><span class="p">.</span><span class="na">setModel</span><span class="p">(</span><span class="n">modelo</span><span class="p">);</span>
+<span class="n">txtNombre</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+
+<span class="c1">// Borrar el seleccionado</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">indice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lstNombres</span><span class="p">.</span><span class="na">getSelectedIndex</span><span class="p">();</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">indice</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">JOptionPane</span><span class="p">.</span><span class="na">showMessageDialog</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Selecciona un nombre para borrar&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">modelo</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="n">indice</span><span class="p">);</span>
+<span class="w">    </span><span class="n">lstNombres</span><span class="p">.</span><span class="na">setModel</span><span class="p">(</span><span class="n">modelo</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="ejercicio-7-combo-box-jcombobox">Ejercicio 7 — Combo Box (<code>JComboBox</code>)</h3>
+<p>Similar al ejercicio anterior pero usando un <code>JComboBox</code> en lugar de <code>JList</code>.</p>
+<p><strong>Ventaja:</strong> el <code>JComboBox</code> permite añadir y eliminar elementos directamente sin necesidad de un modelo externo:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Insertar</span>
+<span class="n">cmbNombres</span><span class="p">.</span><span class="na">addItem</span><span class="p">(</span><span class="n">txtNombre</span><span class="p">.</span><span class="na">getText</span><span class="p">());</span>
+<span class="n">txtNombre</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+
+<span class="c1">// Borrar el seleccionado</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cmbNombres</span><span class="p">.</span><span class="na">getItemCount</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">JOptionPane</span><span class="p">.</span><span class="na">showMessageDialog</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;No hay elementos en el combo&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">cmbNombres</span><span class="p">.</span><span class="na">removeItemAt</span><span class="p">(</span><span class="n">cmbNombres</span><span class="p">.</span><span class="na">getSelectedIndex</span><span class="p">());</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="ejercicio-8-seleccion-de-cursos-jcheckbox">Ejercicio 8 — Selección de cursos (<code>JCheckBox</code>)</h3>
+<p>Crea un formulario con varios <code>JCheckBox</code> (uno por curso) y una lista que muestre los cursos seleccionados.</p>
+<ul>
+<li>Al marcar un <code>JCheckBox</code> → el curso se añade a la lista</li>
+<li>Al desmarcar → el curso se elimina de la lista</li>
+<li><strong>Límite de 4 cursos</strong>: si el usuario intenta marcar un quinto, mostrar un <code>JOptionPane.WARNING_MESSAGE</code> y desmarcar el checkbox automáticamente</li>
+</ul>
+<hr />
+<h3 id="ejercicio-9-tabla-de-datos-jtable-parte-1">Ejercicio 9 — Tabla de datos (<code>JTable</code>) — Parte 1</h3>
+<p>Crea un formulario con un <code>JTable</code> con las columnas: ID, Nombre, Categoría, Precio, Stock.</p>
+<p><strong>Código para inicializar la tabla con datos:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Declarar el modelo (como atributo de la clase)</span>
+<span class="n">DefaultTableModel</span><span class="w"> </span><span class="n">modelo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">DefaultTableModel</span><span class="p">(</span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">String</span><span class="o">[]</span><span class="p">{</span><span class="s">&quot;ID&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Nombre&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Categoría&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Precio&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Stock&quot;</span><span class="p">},</span><span class="w"> </span><span class="mi">0</span>
+<span class="p">);</span>
+
+<span class="c1">// En el constructor, después de initComponents():</span>
+<span class="n">jTable1</span><span class="p">.</span><span class="na">setModel</span><span class="p">(</span><span class="n">modelo</span><span class="p">);</span>
+
+<span class="c1">// Activar ordenación por columnas</span>
+<span class="n">TableRowSorter</span><span class="o">&lt;</span><span class="n">DefaultTableModel</span><span class="o">&gt;</span><span class="w"> </span><span class="n">sorter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">TableRowSorter</span><span class="o">&lt;&gt;</span><span class="p">(</span><span class="n">modelo</span><span class="p">);</span>
+<span class="n">jTable1</span><span class="p">.</span><span class="na">setRowSorter</span><span class="p">(</span><span class="n">sorter</span><span class="p">);</span>
+
+<span class="c1">// Añadir filas de ejemplo</span>
+<span class="n">modelo</span><span class="p">.</span><span class="na">addRow</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Object</span><span class="o">[]</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;The Witcher 3&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;RPG&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">19.99</span><span class="p">,</span><span class="w"> </span><span class="mi">50</span><span class="p">});</span>
+<span class="n">modelo</span><span class="p">.</span><span class="na">addRow</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Object</span><span class="o">[]</span><span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;FIFA 25&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Deportes&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">59.99</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">});</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Desactivar edición manual</p>
+<p>En la vista Diseño → botón derecho sobre el <code>jTable1</code> → <em>Table Contents…</em> → sección <strong>Columns</strong> → desmarca <strong>Editable</strong> en todas las columnas.</p>
+</div>
+<hr />
+<h3 id="ejercicio-10-tabla-crud-jtable-parte-2">Ejercicio 10 — Tabla CRUD (<code>JTable</code>) — Parte 2</h3>
+<p>Amplía el ejercicio anterior añadiendo los componentes: <code>txtId</code>, <code>txtNombre</code>, <code>txtCategoria</code>, <code>txtPrecio</code>, <code>txtStock</code>, <code>btnAgregar</code>, <code>btnLimpiar</code>, <code>btnEliminar</code>, <code>btnActualizar</code>.</p>
+<p><strong>Agregar fila:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Comprobar que todos los campos tienen datos</span>
+<span class="n">modelo</span><span class="p">.</span><span class="na">addRow</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Object</span><span class="o">[]</span><span class="p">{</span>
+<span class="w">    </span><span class="n">Integer</span><span class="p">.</span><span class="na">parseInt</span><span class="p">(</span><span class="n">txtId</span><span class="p">.</span><span class="na">getText</span><span class="p">()),</span>
+<span class="w">    </span><span class="n">txtNombre</span><span class="p">.</span><span class="na">getText</span><span class="p">(),</span>
+<span class="w">    </span><span class="n">txtCategoria</span><span class="p">.</span><span class="na">getText</span><span class="p">(),</span>
+<span class="w">    </span><span class="n">Double</span><span class="p">.</span><span class="na">parseDouble</span><span class="p">(</span><span class="n">txtPrecio</span><span class="p">.</span><span class="na">getText</span><span class="p">()),</span>
+<span class="w">    </span><span class="n">Integer</span><span class="p">.</span><span class="na">parseInt</span><span class="p">(</span><span class="n">txtStock</span><span class="p">.</span><span class="na">getText</span><span class="p">())</span>
+<span class="p">});</span>
+<span class="n">limpiarCampos</span><span class="p">();</span>
+</code></pre></div>
+<p><strong>Eliminar fila seleccionada:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">fila</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">jTable1</span><span class="p">.</span><span class="na">getSelectedRow</span><span class="p">();</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fila</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">JOptionPane</span><span class="p">.</span><span class="na">showMessageDialog</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Selecciona una fila para eliminar&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">conf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JOptionPane</span><span class="p">.</span><span class="na">showConfirmDialog</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;¿Eliminar este registro?&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="s">&quot;Confirmar&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">JOptionPane</span><span class="p">.</span><span class="na">YES_NO_OPTION</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">conf</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">JOptionPane</span><span class="p">.</span><span class="na">YES_OPTION</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">DefaultTableModel</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">DefaultTableModel</span><span class="p">)</span><span class="w"> </span><span class="n">jTable1</span><span class="p">.</span><span class="na">getModel</span><span class="p">();</span>
+<span class="w">        </span><span class="n">m</span><span class="p">.</span><span class="na">removeRow</span><span class="p">(</span><span class="n">fila</span><span class="p">);</span>
+<span class="w">        </span><span class="n">limpiarCampos</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>Cargar fila en campos al hacer clic:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">jTable1MouseClicked</span><span class="p">(</span><span class="n">java</span><span class="p">.</span><span class="na">awt</span><span class="p">.</span><span class="na">event</span><span class="p">.</span><span class="na">MouseEvent</span><span class="w"> </span><span class="n">evt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">fila</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">jTable1</span><span class="p">.</span><span class="na">getSelectedRow</span><span class="p">();</span>
+<span class="w">    </span><span class="n">txtId</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">modelo</span><span class="p">.</span><span class="na">getValueAt</span><span class="p">(</span><span class="n">fila</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">).</span><span class="na">toString</span><span class="p">());</span>
+<span class="w">    </span><span class="n">txtNombre</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">modelo</span><span class="p">.</span><span class="na">getValueAt</span><span class="p">(</span><span class="n">fila</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">).</span><span class="na">toString</span><span class="p">());</span>
+<span class="w">    </span><span class="n">txtCategoria</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">modelo</span><span class="p">.</span><span class="na">getValueAt</span><span class="p">(</span><span class="n">fila</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">).</span><span class="na">toString</span><span class="p">());</span>
+<span class="w">    </span><span class="n">txtPrecio</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">modelo</span><span class="p">.</span><span class="na">getValueAt</span><span class="p">(</span><span class="n">fila</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">).</span><span class="na">toString</span><span class="p">());</span>
+<span class="w">    </span><span class="n">txtStock</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">modelo</span><span class="p">.</span><span class="na">getValueAt</span><span class="p">(</span><span class="n">fila</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">).</span><span class="na">toString</span><span class="p">());</span>
+<span class="w">    </span><span class="n">btnActualizar</span><span class="p">.</span><span class="na">setEnabled</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>Actualizar fila:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">fila</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">jTable1</span><span class="p">.</span><span class="na">getSelectedRow</span><span class="p">();</span>
+<span class="n">modelo</span><span class="p">.</span><span class="na">setValueAt</span><span class="p">(</span><span class="n">Integer</span><span class="p">.</span><span class="na">parseInt</span><span class="p">(</span><span class="n">txtId</span><span class="p">.</span><span class="na">getText</span><span class="p">()),</span><span class="w"> </span><span class="n">fila</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="n">modelo</span><span class="p">.</span><span class="na">setValueAt</span><span class="p">(</span><span class="n">txtNombre</span><span class="p">.</span><span class="na">getText</span><span class="p">(),</span><span class="w">                </span><span class="n">fila</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="n">modelo</span><span class="p">.</span><span class="na">setValueAt</span><span class="p">(</span><span class="n">txtCategoria</span><span class="p">.</span><span class="na">getText</span><span class="p">(),</span><span class="w">             </span><span class="n">fila</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span>
+<span class="n">modelo</span><span class="p">.</span><span class="na">setValueAt</span><span class="p">(</span><span class="n">Double</span><span class="p">.</span><span class="na">parseDouble</span><span class="p">(</span><span class="n">txtPrecio</span><span class="p">.</span><span class="na">getText</span><span class="p">()),</span><span class="w"> </span><span class="n">fila</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span>
+<span class="n">modelo</span><span class="p">.</span><span class="na">setValueAt</span><span class="p">(</span><span class="n">Integer</span><span class="p">.</span><span class="na">parseInt</span><span class="p">(</span><span class="n">txtStock</span><span class="p">.</span><span class="na">getText</span><span class="p">()),</span><span class="w">    </span><span class="n">fila</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span>
+<span class="n">limpiarCampos</span><span class="p">();</span>
+</code></pre></div>
+<p><strong>Función auxiliar <code>limpiarCampos()</code>:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">limpiarCampos</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">txtId</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">txtNombre</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">txtCategoria</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">txtPrecio</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">txtStock</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">btnActualizar</span><span class="p">.</span><span class="na">setEnabled</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "content.code.copy", "navigation.expand"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

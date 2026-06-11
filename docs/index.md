@@ -20,4 +20,4 @@ Bienvenido a los apuntes de **Programación** de 1º DAW del **IES Torrevigía**
 | [UD12 - Operaciones CRUD con BD](ud12/01_crud_swing.md) | Operaciones CRUD sobre Bases de Datos |
 ---
 
-*Francisco J. Guirau López · IES 1 Torrevigía*
+*Francisco J. Guirau López · IES Torrevigía*

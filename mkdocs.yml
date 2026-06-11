@@ -36,15 +36,15 @@ nav:
     - 6.1 Objetos y clases: ud6/01_poo_objetos_clases.md
   - 7 - Herencia:
     - 7.1 Herencia, polimorfismo e interfaces: ud7/01_herencia_polimorfismo.md  
-  - 8 - Colecciones:
-    - 8.1 Colecciones: ud8/01_estructuras_datos_avanzadas.md
-  - 9 - Ficheros:
-    - 9.1 Lectura y escritura de ficheros: ud9/01_ficheros.md
-  - 10 - BD:
-    - 10.1 JDBC y MySQL: ud10/01_jdbc_mysql.md
-  - 11 - Interfaces Gráficas:
-    - 11.1 Mensajes emergentes (JOptionPane): ud11/01_joptionpane.md
-    - 11.2 Formularios (JFrame): ud11/02_jframe.md
-    - 11.3 Ejercicios: ud11/03_ejercicios.md
-  - 12 - CRUD:
-    - 12.1 CRUD con Swing: ud12/01_crud_swing.md
+#  - 8 - Colecciones:
+#    - 8.1 Colecciones: ud8/01_estructuras_datos_avanzadas.md
+#  - 9 - Ficheros:
+#    - 9.1 Lectura y escritura de ficheros: ud9/01_ficheros.md
+#  - 10 - BD:
+#    - 10.1 JDBC y MySQL: ud10/01_jdbc_mysql.md
+#  - 11 - Interfaces Gráficas:
+#    - 11.1 Mensajes emergentes (JOptionPane): ud11/01_joptionpane.md
+#    - 11.2 Formularios (JFrame): ud11/02_jframe.md
+#    - 11.3 Ejercicios: ud11/03_ejercicios.md
+#  - 12 - CRUD:
+#    - 12.1 CRUD con Swing: ud12/01_crud_swing.md

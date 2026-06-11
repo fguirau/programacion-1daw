@@ -14,7 +14,7 @@ Ventajas principales:
 - **Extensibilidad** — la clase hija puede añadir nuevos atributos y métodos, o redefinir los heredados
 
 !!! warning "No existe herencia múltiple en Java"
-    Una clase solo puede heredar de **una única clase**. La herencia múltiple se simula mediante **interfaces** (ver sección 5).
+    Una clase solo puede heredar de **una única clase**. La herencia múltiple se simula mediante **interfaces** (ver sección 7.5).
 
 ### 7.1.1 Sintaxis: `extends`
 
@@ -31,6 +31,8 @@ public class Perro extends Animal {   // Perro hereda de Animal
     }
 }
 ```
+
+![Ejemplo de herencia](img/ejemplo.jpg){ .center }
 
 ```java
 Perro miPerro = new Perro();
@@ -66,6 +68,8 @@ public class Cuadrado extends Figura {
     public int getArea() { return lado * lado; }
 }
 ```
+
+![Ejemplo de herencia](img/ejemplo1.jpg){ .center }
 
 `Cuadrado` hereda `color`, `setColor()` y `getColor()` de `Figura`, y añade su propio atributo `lado` y método `getArea()`.
 
