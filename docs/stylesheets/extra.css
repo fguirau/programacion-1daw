@@ -1,0 +1,240 @@
+/* ============================================================
+   extra.css — Tema Indigo para MkDocs Material
+   Apuntes Programación · IES 1 Libertas
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   1. PALETA INDIGO — variables globales del tema
+   ------------------------------------------------------------ */
+:root {
+  --md-primary-fg-color:        #3949AB; /* indigo-600 */
+  --md-primary-fg-color--light: #C5CAE9; /* indigo-100 */
+  --md-primary-fg-color--dark:  #1A237E; /* indigo-900 */
+  --md-accent-fg-color:         #536DFE; /* indigo accent-200 */
+}
+
+/* ------------------------------------------------------------
+   2. ENCABEZADOS — escala de azules indigo
+   ------------------------------------------------------------ */
+
+/* H1 — indigo oscuro con borde inferior elegante */
+.md-typeset h1 {
+  color: #1A237E;                         /* indigo-900 */
+  border-bottom: 3px solid #3F51B5;       /* indigo-500 */
+  padding-bottom: 0.3em;
+  letter-spacing: -0.01em;
+}
+
+/* H2 — indigo estándar con acento lateral */
+.md-typeset h2 {
+  color: #283593;                         /* indigo-800 */
+  border-left: 4px solid #5C6BC0;         /* indigo-400 */
+  padding-left: 0.65em;
+  margin-top: 1.8em;
+}
+
+/* H3 — indigo medio */
+.md-typeset h3 {
+  color: #3949AB;                         /* indigo-600 */
+}
+
+/* H4 — indigo suave, cursiva para jerarquía visual */
+.md-typeset h4 {
+  color: #3F51B5;                         /* indigo-500 */
+  font-style: italic;
+}
+
+/* H5 / H6 — tono más suave, versalitas */
+.md-typeset h5,
+.md-typeset h6 {
+  color: #7986CB;                         /* indigo-300 */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.78em;
+}
+
+/* ------------------------------------------------------------
+   3. ENLACES
+   ------------------------------------------------------------ */
+.md-typeset a {
+  color: #3949AB;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.md-typeset a:hover {
+  color: #1A237E;
+  border-bottom-color: #3949AB;
+}
+
+/* ------------------------------------------------------------
+   4. CÓDIGO INLINE
+   ------------------------------------------------------------ */
+.md-typeset code {
+  background-color: #E8EAF6;             /* indigo-50 */
+  color: #1A237E;
+  border-radius: 4px;
+  padding: 0.12em 0.38em;
+  font-size: 0.875em;
+}
+
+/* ------------------------------------------------------------
+   5. BLOQUES DE CÓDIGO — borde izquierdo indigo
+   ------------------------------------------------------------ */
+.md-typeset pre {
+  border-left: 4px solid #5C6BC0;        /* indigo-400 */
+  border-radius: 0 6px 6px 0;
+}
+
+/* ------------------------------------------------------------
+   6. TABLAS
+   ------------------------------------------------------------ */
+.md-typeset table:not([class]) th {
+  background-color: #3F51B5;             /* indigo-500 */
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: #E8EAF6;             /* indigo-50 */
+}
+.md-typeset table:not([class]) tr:hover {
+  background-color: #C5CAE9;             /* indigo-100 */
+}
+
+/* ------------------------------------------------------------
+   7. ADMONITIONS — variantes con colores indigo/complementarios
+   ------------------------------------------------------------ */
+
+/* Estilo base — bordes redondeados y sin sombra excesiva */
+.md-typeset .admonition,
+.md-typeset details {
+  margin: 1.4em 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(63, 81, 181, 0.08);
+  border-width: 0 0 0 4px;
+}
+
+.md-typeset .admonition-title,
+.md-typeset details > summary {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* note — azul indigo */
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: #3F51B5;
+}
+.md-typeset .admonition.note > .admonition-title,
+.md-typeset details.note > summary {
+  background-color: #E8EAF6;
+  color: #1A237E;
+}
+.md-typeset .admonition.note > .admonition-title::before,
+.md-typeset details.note > summary::before {
+  background-color: #3F51B5;
+}
+
+/* tip — verde azulado */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: #00897B;
+}
+.md-typeset .admonition.tip > .admonition-title,
+.md-typeset details.tip > summary {
+  background-color: #E0F2F1;
+  color: #004D40;
+}
+.md-typeset .admonition.tip > .admonition-title::before,
+.md-typeset details.tip > summary::before {
+  background-color: #00897B;
+}
+
+/* warning — ámbar */
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: #F9A825;
+}
+.md-typeset .admonition.warning > .admonition-title,
+.md-typeset details.warning > summary {
+  background-color: #FFFDE7;
+  color: #F57F17;
+}
+.md-typeset .admonition.warning > .admonition-title::before,
+.md-typeset details.warning > summary::before {
+  background-color: #F9A825;
+}
+
+/* danger — rojo */
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+  border-color: #C62828;
+}
+.md-typeset .admonition.danger > .admonition-title,
+.md-typeset details.danger > summary {
+  background-color: #FFEBEE;
+  color: #B71C1C;
+}
+.md-typeset .admonition.danger > .admonition-title::before,
+.md-typeset details.danger > summary::before {
+  background-color: #C62828;
+}
+
+/* question — verde lima */
+.md-typeset .admonition.question,
+.md-typeset details.question {
+  border-color: #64DD17;
+}
+
+/* example — violeta */
+.md-typeset .admonition.example,
+.md-typeset details.example {
+  border-color: #7B1FA2;
+}
+.md-typeset .admonition.example > .admonition-title,
+.md-typeset details.example > summary {
+  background-color: #F3E5F5;
+  color: #4A148C;
+}
+.md-typeset .admonition.example > .admonition-title::before,
+.md-typeset details.example > summary::before {
+  background-color: #7B1FA2;
+}
+
+/* ------------------------------------------------------------
+   8. CENTRADO DE IMÁGENES con { .center }
+   Requiere attr_list en markdown_extensions del mkdocs.yml
+   ------------------------------------------------------------ */
+.md-typeset img.center,
+img.center {
+  display: block;
+  margin: 1em auto;
+}
+
+/* Alternativa: centra el párrafo que solo contiene una imagen */
+.md-typeset p:has(> img:only-child) {
+  text-align: center;
+}
+
+/* ------------------------------------------------------------
+   9. BARRA DE NAVEGACIÓN LATERAL — ítem activo
+   ------------------------------------------------------------ */
+.md-nav__item--active > .md-nav__link {
+  color: #283593;
+  font-weight: 700;
+}
+
+/* ------------------------------------------------------------
+   10. FOOTER
+   ------------------------------------------------------------ */
+.md-footer {
+  background-color: #1A237E;             /* indigo-900 */
+}
+
+/* ------------------------------------------------------------
+   11. BOTÓN DE COPIAR CÓDIGO — ajuste de color
+   ------------------------------------------------------------ */
+.md-clipboard:hover {
+  color: #3F51B5;
+}
