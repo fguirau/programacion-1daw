@@ -1,10 +1,10 @@
-# UD12 - Acceso a Bases de Datos con JDBC
+# UD10 - Acceso a Bases de Datos con JDBC
 
 > Conexión y manipulación de bases de datos MySQL desde Java usando la API JDBC.
 
 ---
 
-## 1. ¿Qué es JDBC?
+## 10.1. ¿Qué es JDBC?
 
 **JDBC** (*Java DataBase Connectivity*) es la tecnología Java que permite a las aplicaciones interactuar con bases de datos relacionales. Es parte integral de la plataforma Java, por lo que no requiere instalación adicional.
 
@@ -12,48 +12,66 @@ JDBC actúa como **interfaz única** que independiza la aplicación del motor de
 
 ---
 
-## 2. Configuración del entorno
+## 10.2. Configuración del entorno
 
-### 2.1 En NetBeans
+### 10.2.1 En NetBeans
 
 NetBeans incluye el driver de MySQL en sus versiones recientes. Verifica que lo tienes en **Services → Drivers → MySQL (Connector/J driver)**.
+
+![Ejemplo de Driver MySQL](img/imagen1.png){ .center }
 
 **Si no aparece**, agrégalo manualmente:
 
 1. *Tools → Libraries → New Library…* → nombre `MySQL` → OK
-2. Botón *Add JAR/Folder…* → selecciona `mysql-connector-j-9.5.0.jar`
+
+![Ejemplo de Driver MySQL](img/imagen2.png){ .center }
+
+2. En el lado izquierdo del cuadro de dialogo, aparece una ventana con las Librerías agregadas a NetBeans. En el lado derecho aparece el nombre de la librería y la ruta del archivo con la librería. Nos desplazamos hacia abajo, hasta las librerías que empiezan por M, y observamos si aparece MySQL. En la imagen anterior, podemos observar como no aparecía. Para agregar el conector de MySQL a NetBeans, hacer clic en el botón New Library… y aparece un cuadro de dialogo como el siguiente, escribimos como nombre
+de librería MySQL y pulsamos OK: 
+![Ejemplo de Driver MySQL](img/imagen3.png){ .center }
+
+Botón *Add JAR/Folder…* → selecciona `mysql-connector-j-9.5.0.jar`
+![Ejemplo de Driver MySQL](img/imagen4.png){ .center }
+
 3. OK
+
+
 
 Una vez añadida la librería a NetBeans, añádela también al proyecto:
 botón derecho sobre *Libraries* del proyecto → *Add Library… → MySQL*
 
-### 2.2 En VS Code
+### 10.2.2 En VS Code
 
 1. Instala la extensión **Extension Pack for Java**
+![Imagen de la Extensión Pack for Java](img/ejemplo1.png){ .center }
 2. Crea un proyecto: `Ctrl+Shift+P` → *Java: Create Java Project* → elige **No build Tools**
 3. Copia `mysql-connector-j-9.5.0.jar` dentro de la carpeta `lib/`
 4. En la pestaña **Java Projects**, sección *Referenced Libraries*, comprueba que aparece el `.jar`; si no, añádelo manualmente
+![Imagen del .jar en Referenced Libraries](img/ejemplo2.png){ .center }
 
 ---
 
-## 3. Conectar NetBeans a una base de datos MySQL
+## 10.3. Conectar NetBeans a una base de datos MySQL
 
 Para gestionar la BD directamente desde el IDE:
 
 1. En **Services**, clic derecho sobre el conector MySQL → *Connect Using…*
+![Ejemplo de Conexión a BD MySQL](img/imagen5.png){ .center }
 2. Rellena los datos:
     - **Driver:** MySQL (Connector/J driver)
     - **Database:** nombre de la BD (p.ej. `prueba`)
     - **Usuario:** `alumno` / **Contraseña:** `alumno`
+![Ejemplo de Conexión a BD MySQL](img/imagen6.png){ .center }
 3. *Test Connection* → si es correcto → *Next → Next → Finish*
 
 Desde esta conexión puedes crear tablas, ejecutar SQL y consultar datos directamente en el IDE sin salir de NetBeans.
 
+![Ejemplo de Conexión a BD MySQL](img/imagen7.png){ .center }
 ---
 
-## 4. Acceso a MySQL desde una aplicación Java
+## 10.4. Acceso a MySQL desde una aplicación Java
 
-### 4.1 Estructura básica de conexión
+### 10.4.1 Estructura básica de conexión
 
 ```java
 import java.sql.*;
@@ -88,7 +106,7 @@ try {
 
 ---
 
-### 4.2 Consultar registros — `SELECT`
+### 10.4.2 Consultar registros — `SELECT`
 
 Para consultas `SELECT` se usa `Statement` + `executeQuery()`, que devuelve un `ResultSet` (tabla de resultados):
 
@@ -127,7 +145,7 @@ while (rs.next()) {
 
 ---
 
-### 4.3 Insertar, actualizar y eliminar — `PreparedStatement`
+### 10.4.3 Insertar, actualizar y eliminar — `PreparedStatement`
 
 Para consultas `INSERT`, `UPDATE` y `DELETE` se usa `PreparedStatement` + `executeUpdate()`. Los `?` son **parámetros** que se asignan después para evitar inyección SQL:
 
@@ -166,7 +184,7 @@ System.out.println("Filas eliminadas: " + filasAfectadas);
 
 ---
 
-### 4.4 Obtener el ID autogenerado
+### 10.4.4 Obtener el ID autogenerado
 
 Cuando la clave primaria es **auto_increment** y necesitas saber el ID asignado al nuevo registro:
 
@@ -188,7 +206,7 @@ if (res > 0) {
 
 ---
 
-### 4.5 Ejecutar procedimientos almacenados
+### 10.4.5 Ejecutar procedimientos almacenados
 
 Si tienes procedimientos almacenados en la BD, se llaman con `CallableStatement`:
 
@@ -208,7 +226,7 @@ cs.close();
 
 ---
 
-## 5. Clase `Conexion` reutilizable
+## 10.5. Clase `Conexion` reutilizable
 
 En lugar de repetir el código de conexión en cada método, lo habitual es crear una **clase `Conexion`** con un método estático que devuelve la conexión ya abierta:
 

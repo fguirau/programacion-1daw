@@ -4,7 +4,7 @@
 
 ---
 
-## 1. ¿Qué es CRUD?
+## 12.1. ¿Qué es CRUD?
 
 CRUD es el acrónimo de las cuatro operaciones básicas sobre datos:
 
@@ -19,7 +19,7 @@ Estas cuatro acciones forman la base de casi cualquier aplicación que trabaje c
 
 ---
 
-## 2. Estructura del proyecto
+## 12.2. Estructura del proyecto
 
 Vamos a crear una aplicación **CRUDJava** en NetBeans que combina:
 
@@ -27,7 +27,7 @@ Vamos a crear una aplicación **CRUDJava** en NetBeans que combina:
 - **MySQL** — almacenamiento de los datos
 - **Swing (JFrame + JTable)** — interfaz gráfica
 
-### 2.1 Tabla en MySQL
+### 12.2.1 Tabla en MySQL
 
 ```sql
 CREATE TABLE usuarios (
@@ -38,7 +38,7 @@ CREATE TABLE usuarios (
 );
 ```
 
-### 2.2 Clase `Conexion`
+### 12.2.2 Clase `Conexion`
 
 Crea una clase `Conexion.java` con un método estático que gestiona la conexión:
 
@@ -61,7 +61,9 @@ public class Conexion {
 }
 ```
 
-### 2.3 Diseño del formulario (`CRUDJava.java`)
+### 12.2.3 Diseño del formulario (`CRUDJava.java`)
+
+![Ejemplo de Formulario](img/imagen1.png){ .center }
 
 Componentes necesarios:
 
@@ -83,7 +85,7 @@ Componentes necesarios:
 
 ---
 
-## 3. C — Create (Insertar usuario)
+## 12.3. C — Create (Insertar usuario)
 
 Al pulsar **Agregar**, se leen los campos de texto y se inserta un nuevo registro en la BD:
 
@@ -111,7 +113,7 @@ private void btnAgregarActionPerformed(ActionEvent evt) {
 
 ---
 
-## 4. R — Read (Mostrar usuarios)
+## 12.4. R — Read (Mostrar usuarios)
 
 La función `cargarTabla()` vacía la tabla y la rellena con todos los registros de la BD. Se llama al iniciar la app y después de cada operación:
 
@@ -148,7 +150,7 @@ private void cargarTabla() throws SQLException {
 
 ---
 
-## 5. D — Delete (Eliminar usuario)
+## 12.5. D — Delete (Eliminar usuario)
 
 Al pulsar **Eliminar**:
 
@@ -197,9 +199,9 @@ private void btnEliminarActionPerformed(ActionEvent evt) {
 
 ---
 
-## 6. U — Update (Actualizar usuario)
+## 12.6. U — Update (Actualizar usuario)
 
-### 6.1 Cargar datos al hacer clic en una fila
+### 12.6.1 Cargar datos al hacer clic en una fila
 
 Al hacer clic sobre la tabla, los datos de la fila seleccionada se cargan en los campos de texto y se activa el botón **Actualizar**:
 
@@ -222,7 +224,7 @@ private void jTable1MouseClicked(MouseEvent evt) {
 }
 ```
 
-### 6.2 Ejecutar el UPDATE
+### 12.6.2 Ejecutar el UPDATE
 
 ```java
 private void btnActualizarActionPerformed(ActionEvent evt) {
@@ -260,7 +262,7 @@ private void btnActualizarActionPerformed(ActionEvent evt) {
 
 ---
 
-## 7. Flujo completo de la aplicación
+## 12.7. Flujo completo de la aplicación
 
 ```
 Inicio

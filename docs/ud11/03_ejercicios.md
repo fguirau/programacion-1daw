@@ -1,4 +1,4 @@
-## 3. Ejercicios
+## 11.3. Ejercicios
 
 ---
 
@@ -31,6 +31,8 @@ Diseña una interfaz con dos campos de texto para introducir números. Al pulsar
 
 Crea un proyecto llamado `Cubo` con formulario de **600×350px** centrado en pantalla.
 
+![Formulario Cálculo de Área y Volumen de un cubo](img/cubo.png){.center}
+
 **Componentes:** `lblCubo` (con imagen), `lblArista`, `txtArista`, `btnCalcular`, `lblArea`, `txtArea`, `lblVolumen`, `txtVolumen`
 
 - Desactiva la propiedad **Editable** de `txtArea` y `txtVolumen`
@@ -46,15 +48,7 @@ try {
 }
 ```
 
-Al pulsar **Calcular**, obtén la arista del cuadro de texto y calcula:
-
-```java
-double arista = Double.parseDouble(txtArista.getText());
-double area   = 6 * arista * arista;
-double volumen = arista * arista * arista;
-txtArea.setText(String.valueOf(area));
-txtVolumen.setText(String.valueOf(volumen));
-```
+Al pulsar **Calcular**, obtén la arista del cuadro de texto y calcula el área y el volumen.
 
 ---
 
@@ -62,18 +56,16 @@ txtVolumen.setText(String.valueOf(volumen));
 
 Crea un proyecto `Hipotenusa`. El usuario introduce los dos catetos y al pulsar "Calcular" se obtiene la hipotenusa.
 
-```java
-double cateto1 = Double.parseDouble(txtCateto1.getText());
-double cateto2 = Double.parseDouble(txtCateto2.getText());
-double hipotenusa = Math.sqrt(cateto1 * cateto1 + cateto2 * cateto2);
-txtHipotenusa.setText(String.format("%.2f", hipotenusa));
-```
+![Formulario Cálculo de Hipotenusa](img/hipotenusa.png){.center}
+
 
 ---
 
 ### Ejercicio 5 — Resistencia equivalente
 
 Crea una aplicación que calcule la resistencia equivalente de un circuito con dos resistencias en **serie** o **paralelo**, seleccionando la opción mediante botones de radio (`JRadioButton`).
+
+![Formulario Cálculo de Resistencia Equivalente](img/resis.png){.center}
 
 **Fórmulas:**
 
@@ -97,26 +89,17 @@ Crea una aplicación con un campo de texto, un botón "Insertar Nombre", un `JLi
 - Al pulsar "Insertar Nombre": si el campo está vacío, no inserta nada; si tiene texto, lo añade a la lista y limpia el campo
 - Al pulsar "Borrar Nombre": si no hay ningún elemento seleccionado, muestra un mensaje de error; si hay uno seleccionado, lo elimina
 
-**Código base para trabajar con `JList`:**
+![Formulario JList](img/jlist.png){.center}
 
-```java
-// Declarar el modelo (como atributo de la clase)
-DefaultListModel<String> modelo = new DefaultListModel<>();
 
-// Insertar un nombre
-modelo.addElement(txtNombre.getText());
-lstNombres.setModel(modelo);
-txtNombre.setText("");
-
-// Borrar el seleccionado
-int indice = lstNombres.getSelectedIndex();
-if (indice == -1) {
-    JOptionPane.showMessageDialog(null, "Selecciona un nombre para borrar");
-} else {
-    modelo.remove(indice);
-    lstNombres.setModel(modelo);
-}
-```
+!!! tip "Para poder trabajar en java con un cuadro de lista"
+    Lo mejor es que crees en tu aplicación una variable como la siguiente 
+    ```java
+        DefaultListModel<String> modelo = new DefaultListModel<>();
+    ```
+    Cuando tengas que agregar un nombre a la lista, primero lo agregas a esta variable, y luego
+    asignas a la lista esta variable modelo. Para borrar hay que proceder igual, primero borramos del
+    modelo, y luego asignamos el modelo a la lista.
 
 ---
 
@@ -124,26 +107,17 @@ if (indice == -1) {
 
 Similar al ejercicio anterior pero usando un `JComboBox` en lugar de `JList`.
 
-**Ventaja:** el `JComboBox` permite añadir y eliminar elementos directamente sin necesidad de un modelo externo:
+**Ventaja:** el `JComboBox` permite añadir y eliminar elementos directamente sin necesidad de un modelo externo.
 
-```java
-// Insertar
-cmbNombres.addItem(txtNombre.getText());
-txtNombre.setText("");
-
-// Borrar el seleccionado
-if (cmbNombres.getItemCount() == 0) {
-    JOptionPane.showMessageDialog(null, "No hay elementos en el combo");
-} else {
-    cmbNombres.removeItemAt(cmbNombres.getSelectedIndex());
-}
-```
+![Formulario JComboBox](img/jcombo.png){.center}
 
 ---
 
 ### Ejercicio 8 — Selección de cursos (`JCheckBox`)
 
 Crea un formulario con varios `JCheckBox` (uno por curso) y una lista que muestre los cursos seleccionados.
+
+![Formulario JCheckBox](img/chk.png){.center}
 
 - Al marcar un `JCheckBox` → el curso se añade a la lista
 - Al desmarcar → el curso se elimina de la lista
@@ -183,6 +157,8 @@ modelo.addRow(new Object[]{2, "FIFA 25", "Deportes", 59.99, 30});
 ### Ejercicio 10 — Tabla CRUD (`JTable`) — Parte 2
 
 Amplía el ejercicio anterior añadiendo los componentes: `txtId`, `txtNombre`, `txtCategoria`, `txtPrecio`, `txtStock`, `btnAgregar`, `btnLimpiar`, `btnEliminar`, `btnActualizar`.
+
+![Formulario jTable](img/jtable.png){.center}
 
 **Agregar fila:**
 

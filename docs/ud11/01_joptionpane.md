@@ -1,10 +1,10 @@
-# UD10 - Interfaces Gráficas con Swing
+# UD11 - Interfaces Gráficas con Swing
 
 > Creación de interfaces gráficas en Java usando NetBeans y la librería Swing.
 
 ---
 
-## 1. Mensajes emergentes — `JOptionPane`
+## 11.1. Mensajes emergentes — `JOptionPane`
 
 `JOptionPane` es un objeto Java que permite mostrar tres tipos de cuadros de diálogo de forma rápida, sin necesidad de diseñar una ventana manualmente.
 
@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 
 ---
 
-### 1.1 Cuadros de mensaje — `showMessageDialog`
+### 11.1.1 Cuadros de mensaje — `showMessageDialog`
 
 Muestran un mensaje al usuario con un icono informativo.
 
@@ -25,6 +25,8 @@ JOptionPane.showMessageDialog(null, "Mensaje", "Título", JOptionPane.TIPO_ICONO
 // Sintaxis reducida (sin título ni icono)
 JOptionPane.showMessageDialog(null, "Mensaje");
 ```
+
+![Ejemplo de MessageDialog](img/imagen1.png){ .center }
 
 **Parámetros:**
 
@@ -47,18 +49,22 @@ JOptionPane.showMessageDialog(null, "Mensaje");
 
 ```java
 // Ejemplo
-JOptionPane.showMessageDialog(null, "Hola que tal", "Saludo", JOptionPane.INFORMATION_MESSAGE);
+JOptionPane.showMessageDialog(null, "Hola que tal", "Saludo", JOptionPane.WARNING_MESSAGE);
 ```
+
+![Ejemplo de MessageDialog](img/imagen2.png){ .center }
 
 ---
 
-### 1.2 Cuadros de entrada — `showInputDialog`
+### 11.1.2 Cuadros de entrada — `showInputDialog`
 
 Permiten al usuario escribir un dato. El valor introducido se devuelve como `String`.
 
 ```java
 String variable = JOptionPane.showInputDialog(null, "Petición", "Título", JOptionPane.TIPO_ICONO);
 ```
+
+![Ejemplo de MessageDialog](img/imagen3.png){ .center }
 
 !!! info "El resultado se almacena en una variable"
     A diferencia de `showMessageDialog`, aquí la instrucción se iguala a una variable `String` que recogerá el texto escrito por el usuario.
@@ -69,15 +75,19 @@ nom = JOptionPane.showInputDialog(null, "¿Cómo te llamas?", "Nombre", JOptionP
 JOptionPane.showMessageDialog(null, "Hola " + nom + "!");
 ```
 
+![Ejemplo de InputDialog](img/imagen4.png){ .center }
+
 ---
 
-### 1.3 Cuadros de confirmación — `showConfirmDialog`
+### 11.1.3 Cuadros de confirmación — `showConfirmDialog`
 
 Muestran una pregunta con botones de respuesta. Devuelven un `int` con la opción elegida.
 
 ```java
 int opc = JOptionPane.showConfirmDialog(null, "Pregunta", "Título", TIPO_BOTONES, TIPO_ICONO);
 ```
+
+![Ejemplo de ConfirmDialog](img/imagen5.png){ .center }
 
 **Tipos de botones:**
 
@@ -111,6 +121,8 @@ if (opc == JOptionPane.YES_OPTION)
 else
     JOptionPane.showMessageDialog(null, "¡Has pulsado No!");
 ```
+
+![Ejemplo de MessageDialog](img/imagen6.png){ .center }
 
 ---
 

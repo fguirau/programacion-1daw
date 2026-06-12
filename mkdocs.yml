@@ -11,7 +11,8 @@ theme:
     - navigation.sections
     - toc.integrate
     - content.code.copy
-    - navigation.expand    
+    - navigation.expand  
+    - navigation.sticky
     
 extra_css:
   - stylesheets/extra.css
@@ -40,11 +41,11 @@ nav:
     - 8.1 Colecciones: ud8/01_estructuras_datos_avanzadas.md
   - 9 - Ficheros:
     - 9.1 Lectura y escritura de ficheros: ud9/01_ficheros.md
-#  - 10 - BD:
-#    - 10.1 JDBC y MySQL: ud10/01_jdbc_mysql.md
-#  - 11 - Interfaces Gráficas:
-#    - 11.1 Mensajes emergentes (JOptionPane): ud11/01_joptionpane.md
-#    - 11.2 Formularios (JFrame): ud11/02_jframe.md
-#    - 11.3 Ejercicios: ud11/03_ejercicios.md
-#  - 12 - CRUD:
-#    - 12.1 CRUD con Swing: ud12/01_crud_swing.md
+  - 10 - BD:
+    - 10.1 JDBC y MySQL: ud10/01_jdbc_mysql.md
+  - 11 - Interfaces Gráficas:
+    - 11.1 Mensajes emergentes (JOptionPane): ud11/01_joptionpane.md
+    - 11.2 Formularios (JFrame): ud11/02_jframe.md
+    - 11.3 Ejercicios: ud11/03_ejercicios.md
+  - 12 - CRUD:
+    - 12.1 CRUD con Swing: ud12/01_crud_swing.md

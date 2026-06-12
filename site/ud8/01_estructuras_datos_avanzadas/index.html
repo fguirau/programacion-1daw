@@ -11,6 +11,10 @@
       
       
       
+        <link rel="prev" href="../../ud7/01_herencia_polimorfismo/">
+      
+      
+        <link rel="next" href="../../ud9/01_ficheros/">
       
       
         
@@ -21,7 +25,7 @@
     
     
       
-        <title>UD8 - Estructuras de Datos Avanzadas - Programación 1º DAW</title>
+        <title>8.1 Colecciones - Programación 1º DAW</title>
       
     
     
@@ -106,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              UD8 - Estructuras de Datos Avanzadas
+              8.1 Colecciones
             
           </span>
         </div>
@@ -325,6 +329,48 @@
   
   
   7 - Herencia
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  8 - Colecciones
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud9/01_ficheros/" class="md-tabs__link">
+          
+  
+  
+  9 - Ficheros
 
         </a>
       </li>
@@ -1017,6 +1063,506 @@
   
 
     
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8 - Colecciones
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    8 - Colecciones
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.1 Colecciones
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.1 Colecciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#81-colecciones-en-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1. Colecciones en Java
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#82-arraylist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2. ArrayList
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.2. ArrayList">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#821-declaracion-e-importacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.1 Declaración e importación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#822-metodos-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.2 Métodos principales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#823-ejemplo-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.3 Ejemplo completo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#83-hashmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3. HashMap
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.3. HashMap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#831-declaracion-e-importacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.1 Declaración e importación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#832-metodos-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.2 Métodos principales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#833-ejemplo-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.3 Ejemplo completo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#84-linkedlist-lista-enlazada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4. LinkedList (lista enlazada)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.4. LinkedList (lista enlazada)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#841-declaracion-e-importacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.1 Declaración e importación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#842-metodos-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.2 Métodos principales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#843-ejemplo-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.3 Ejemplo completo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#85-stack-pila" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5. Stack (pila)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.5. Stack (pila)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#851-declaracion-e-importacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.1 Declaración e importación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#852-metodos-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.2 Métodos principales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#853-ejemplo-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.3 Ejemplo completo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#86-queue-cola" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6. Queue (cola)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.6. Queue (cola)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#861-declaracion-e-importacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6.1 Declaración e importación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#862-metodos-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6.2 Métodos principales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#863-ejemplo-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6.3 Ejemplo completo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumen-comparativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumen comparativo
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9 - Ficheros
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    9 - Ficheros
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud9/01_ficheros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9.1 Lectura y escritura de ficheros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1138,37 +1684,41 @@
 <h3 id="823-ejemplo-completo">8.2.3 Ejemplo completo</h3>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.ArrayList</span><span class="p">;</span>
 
-<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">bdz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">dbz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
 
 <span class="c1">// Añadir elementos</span>
-<span class="n">bdz</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Goku&quot;</span><span class="p">);</span><span class="w">     </span><span class="c1">// índice 0</span>
-<span class="n">bdz</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Vegeta&quot;</span><span class="p">);</span><span class="w">   </span><span class="c1">// índice 1</span>
-<span class="n">bdz</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Freezer&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">// índice 2</span>
+<span class="n">dbz</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Goku&quot;</span><span class="p">);</span><span class="w">     </span><span class="c1">// índice 0</span>
+<span class="n">dbz</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Vegeta&quot;</span><span class="p">);</span><span class="w">   </span><span class="c1">// índice 1</span>
+<span class="n">dbz</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Freezer&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">// índice 2</span>
 
 <span class="c1">// Insertar en posición concreta</span>
-<span class="n">bdz</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Trunks&quot;</span><span class="p">);</span>
+<span class="n">dbz</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Trunks&quot;</span><span class="p">);</span>
 <span class="c1">// → Goku | Trunks | Vegeta | Freezer</span>
 
 <span class="c1">// Recorrer con for clásico</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">bdz</span><span class="p">.</span><span class="na">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">bdz</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="p">));</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">dbz</span><span class="p">.</span><span class="na">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">dbz</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="p">));</span>
 <span class="p">}</span>
 
 <span class="c1">// Recorrer con for-each (más recomendado)</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">personaje</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">bdz</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">personaje</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">dbz</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">personaje</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="c1">// Eliminar por posición</span>
-<span class="n">bdz</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span><span class="w">           </span><span class="c1">// elimina &quot;Vegeta&quot;</span>
+<span class="n">dbz</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span><span class="w">           </span><span class="c1">// elimina &quot;Vegeta&quot;</span>
 
 <span class="c1">// Eliminar por valor</span>
-<span class="n">bdz</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="s">&quot;Freezer&quot;</span><span class="p">);</span>
+<span class="n">dbz</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="s">&quot;Freezer&quot;</span><span class="p">);</span>
 
 <span class="c1">// Vaciar la lista</span>
-<span class="n">bdz</span><span class="p">.</span><span class="na">clear</span><span class="p">();</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">bdz</span><span class="p">.</span><span class="na">size</span><span class="p">());</span><span class="w">  </span><span class="c1">// 0</span>
+<span class="n">dbz</span><span class="p">.</span><span class="na">clear</span><span class="p">();</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">dbz</span><span class="p">.</span><span class="na">size</span><span class="p">());</span><span class="w">  </span><span class="c1">// 0</span>
 </code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Característica de ArrayList</p>
+<p>Hay que tener en cuenta que los <strong>ArrayList</strong> se reestructuran de forma automática después de un borrado de cualquiera de los elementos del array.</p>
+</div>
 <hr />
 <h2 id="83-hashmap">8.3. HashMap</h2>
 <p>Un <code>HashMap</code> es un <strong>diccionario</strong>: almacena datos en pares <strong>clave → valor</strong>. La clave permite acceder directamente al valor asociado.</p>
@@ -1183,7 +1733,7 @@
 <h3 id="831-declaracion-e-importacion">8.3.1 Declaración e importación</h3>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.HashMap</span><span class="p">;</span>
 
-<span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Integer</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">bdz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Integer</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Integer</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">dbz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Integer</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
 </code></pre></div>
 <h3 id="832-metodos-principales">8.3.2 Métodos principales</h3>
 <table>
@@ -1223,23 +1773,23 @@
 <h3 id="833-ejemplo-completo">8.3.3 Ejemplo completo</h3>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.HashMap</span><span class="p">;</span>
 
-<span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Integer</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">bdz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Integer</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Integer</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">dbz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Integer</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
 
 <span class="c1">// Insertar pares (clave, valor)</span>
-<span class="n">bdz</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="mi">123</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Goku&quot;</span><span class="p">);</span>
-<span class="n">bdz</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="mi">912</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Freezer&quot;</span><span class="p">);</span>
-<span class="n">bdz</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Vegeta&quot;</span><span class="p">);</span>
+<span class="n">dbz</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="mi">123</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Goku&quot;</span><span class="p">);</span>
+<span class="n">dbz</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="mi">912</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Freezer&quot;</span><span class="p">);</span>
+<span class="n">dbz</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Vegeta&quot;</span><span class="p">);</span>
 
 <span class="c1">// Obtener por clave</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">bdz</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">912</span><span class="p">));</span><span class="w">  </span><span class="c1">// Freezer</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">bdz</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">112</span><span class="p">));</span><span class="w">  </span><span class="c1">// null → clave inexistente</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">dbz</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">912</span><span class="p">));</span><span class="w">  </span><span class="c1">// Freezer</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">dbz</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">112</span><span class="p">));</span><span class="w">  </span><span class="c1">// null → clave inexistente</span>
 
 <span class="c1">// Mostrar todo el mapa</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">bdz</span><span class="p">);</span><span class="w">           </span><span class="c1">// {912=Freezer, 500=Vegeta, 123=Goku}</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">dbz</span><span class="p">);</span><span class="w">           </span><span class="c1">// {912=Freezer, 500=Vegeta, 123=Goku}</span>
 <span class="c1">// (el orden puede variar)</span>
 
 <span class="c1">// Recorrer con entrySet</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="n">entrada</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">bdz</span><span class="p">.</span><span class="na">entrySet</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="n">entrada</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">dbz</span><span class="p">.</span><span class="na">entrySet</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">entrada</span><span class="p">.</span><span class="na">getKey</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; → &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">getValue</span><span class="p">());</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -1371,7 +1921,6 @@
 </tbody>
 </table>
 <h3 id="853-ejemplo-completo">8.5.3 Ejemplo completo</h3>
-<p><img alt="Ejemplo de Stack" class="center" src="../img/imagen4.png" /></p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Stack</span><span class="p">;</span>
 
 <span class="n">Stack</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">historial</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Stack</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
@@ -1387,6 +1936,7 @@
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">historial</span><span class="p">.</span><span class="na">pop</span><span class="p">());</span><span class="w">    </span><span class="c1">// marca.com</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">historial</span><span class="p">.</span><span class="na">empty</span><span class="p">());</span><span class="w">  </span><span class="c1">// true</span>
 </code></pre></div>
+<p><img alt="Ejemplo de Stack" class="center" src="../img/imagen4.png" /></p>
 <hr />
 <h2 id="86-queue-cola">8.6. Queue (cola)</h2>
 <p>Una <strong>cola</strong> es una estructura de tipo <strong>FIFO</strong> (<em>First In, First Out</em> — primero en entrar, primero en salir). Los elementos se insertan por un extremo y se extraen por el otro.</p>
@@ -1430,7 +1980,6 @@
 </tbody>
 </table>
 <h3 id="863-ejemplo-completo">8.6.3 Ejemplo completo</h3>
-<p><img alt="Ejemplo de Queue" class="center" src="../img/imagen7.png" /></p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.LinkedList</span><span class="p">;</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Queue</span><span class="p">;</span>
 
@@ -1447,6 +1996,7 @@
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">cola</span><span class="p">.</span><span class="na">poll</span><span class="p">());</span><span class="w">    </span><span class="c1">// Luis</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">cola</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">());</span><span class="w"> </span><span class="c1">// true</span>
 </code></pre></div>
+<p><img alt="Ejemplo de Queue" class="center" src="../img/imagen7.png" /></p>
 <hr />
 <h2 id="resumen-comparativo">Resumen comparativo</h2>
 <table>

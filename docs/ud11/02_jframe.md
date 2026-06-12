@@ -1,4 +1,4 @@
-## 2. Formularios — `JFrame`
+## 11.2. Formularios — `JFrame`
 
 Un `JFrame` es la **ventana base** de una aplicación Swing: el contenedor sobre el que se colocan botones, cuadros de texto, etiquetas y demás componentes.
 
@@ -6,7 +6,7 @@ Al crear un nuevo proyecto en NetBeans con interfaz gráfica, se genera automát
 
 ---
 
-### 2.1 La palabra clave `this`
+### 11.2.1 La palabra clave `this`
 
 Cuando programas dentro de un formulario, `this` hace referencia al propio formulario. La mayoría de los métodos que controlan la ventana se aplican sobre `this`:
 
@@ -17,7 +17,7 @@ this.setSize(800, 600);
 
 ---
 
-### 2.2 Métodos principales del formulario
+### 11.2.2 Métodos principales del formulario
 
 #### Título
 
@@ -71,7 +71,7 @@ this.dispose();   // cierra este formulario
 
 ---
 
-### 2.3 Estilo de ventanas (`Look and Feel`)
+### 11.2.3 Estilo de ventanas (`Look and Feel`)
 
 Java permite cambiar el aspecto visual de la aplicación para que se parezca al estilo de distintos sistemas operativos:
 
@@ -97,7 +97,7 @@ try {
 
 ---
 
-### 2.4 Eventos del formulario
+### 11.2.4 Eventos del formulario
 
 | Evento | Cuándo se ejecuta |
 |---|---|
@@ -116,7 +116,7 @@ private void formWindowOpened(java.awt.event.WindowEvent evt) {
 
 ---
 
-### 2.5 Propiedad `defaultCloseOperation`
+### 11.2.5 Propiedad `defaultCloseOperation`
 
 Define qué ocurre cuando el usuario pulsa el botón cerrar (✕) de la ventana:
 
@@ -154,7 +154,7 @@ private void formWindowClosing(java.awt.event.WindowEvent evt) {
 
 ---
 
-### 2.6 Icono de la ventana
+### 11.2.6 Icono de la ventana
 
 Para asignar un icono personalizado a la barra de título:
 
