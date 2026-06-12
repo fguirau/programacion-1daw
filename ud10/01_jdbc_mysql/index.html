@@ -11,6 +11,10 @@
       
       
       
+        <link rel="prev" href="../../ud9/01_ficheros/">
+      
+      
+        <link rel="next" href="../../ud11/01_joptionpane/">
       
       
         
@@ -21,7 +25,7 @@
     
     
       
-        <title>UD12 - Acceso a Bases de Datos con JDBC - Programación 1º DAW</title>
+        <title>10.1 JDBC y MySQL - Programación 1º DAW</title>
       
     
     
@@ -72,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ud12-acceso-a-bases-de-datos-con-jdbc" class="md-skip">
+        <a href="#ud10-acceso-a-bases-de-datos-con-jdbc" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -106,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              UD12 - Acceso a Bases de Datos con JDBC
+              10.1 JDBC y MySQL
             
           </span>
         </div>
@@ -365,6 +369,68 @@
   
   
   9 - Ficheros
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  10 - BD
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud11/01_joptionpane/" class="md-tabs__link">
+          
+  
+  
+  11 - Interfaces Gráficas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud12/01_crud_swing/" class="md-tabs__link">
+          
+  
+  
+  12 - CRUD
 
         </a>
       </li>
@@ -1235,6 +1301,545 @@
   
 
     
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 - BD
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    10 - BD
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10.1 JDBC y MySQL
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10.1 JDBC y MySQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#101-que-es-jdbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1. ¿Qué es JDBC?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-configuracion-del-entorno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2. Configuración del entorno
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.2. Configuración del entorno">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1021-en-netbeans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2.1 En NetBeans
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1022-en-vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2.2 En VS Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103-conectar-netbeans-a-una-base-de-datos-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3. Conectar NetBeans a una base de datos MySQL
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104-acceso-a-mysql-desde-una-aplicacion-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4. Acceso a MySQL desde una aplicación Java
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.4. Acceso a MySQL desde una aplicación Java">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1041-estructura-basica-de-conexion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4.1 Estructura básica de conexión
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1042-consultar-registros-select" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4.2 Consultar registros — SELECT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1043-insertar-actualizar-y-eliminar-preparedstatement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4.3 Insertar, actualizar y eliminar — PreparedStatement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1044-obtener-el-id-autogenerado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4.4 Obtener el ID autogenerado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1045-ejecutar-procedimientos-almacenados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4.5 Ejecutar procedimientos almacenados
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#105-clase-conexion-reutilizable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5. Clase Conexion reutilizable
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumen-de-la-unidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumen de la unidad
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 - Interfaces Gráficas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    11 - Interfaces Gráficas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud11/01_joptionpane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11.1 Mensajes emergentes (JOptionPane)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud11/02_jframe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11.2 Formularios (JFrame)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud11/03_ejercicios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11.3 Ejercicios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12 - CRUD
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    12 - CRUD
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud12/01_crud_swing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12.1 CRUD con Swing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1252,50 +1857,64 @@
 
 
 
-<h1 id="ud12-acceso-a-bases-de-datos-con-jdbc">UD12 - Acceso a Bases de Datos con JDBC</h1>
+<h1 id="ud10-acceso-a-bases-de-datos-con-jdbc">UD10 - Acceso a Bases de Datos con JDBC</h1>
 <blockquote>
 <p>Conexión y manipulación de bases de datos MySQL desde Java usando la API JDBC.</p>
 </blockquote>
 <hr />
-<h2 id="1-que-es-jdbc">1. ¿Qué es JDBC?</h2>
+<h2 id="101-que-es-jdbc">10.1. ¿Qué es JDBC?</h2>
 <p><strong>JDBC</strong> (<em>Java DataBase Connectivity</em>) es la tecnología Java que permite a las aplicaciones interactuar con bases de datos relacionales. Es parte integral de la plataforma Java, por lo que no requiere instalación adicional.</p>
 <p>JDBC actúa como <strong>interfaz única</strong> que independiza la aplicación del motor de base de datos concreto. Un <strong>driver JDBC</strong> es el conector específico para cada gestor (MySQL, PostgreSQL, Oracle...) que traduce las llamadas JDBC al lenguaje que entiende la base de datos.</p>
 <hr />
-<h2 id="2-configuracion-del-entorno">2. Configuración del entorno</h2>
-<h3 id="21-en-netbeans">2.1 En NetBeans</h3>
+<h2 id="102-configuracion-del-entorno">10.2. Configuración del entorno</h2>
+<h3 id="1021-en-netbeans">10.2.1 En NetBeans</h3>
 <p>NetBeans incluye el driver de MySQL en sus versiones recientes. Verifica que lo tienes en <strong>Services → Drivers → MySQL (Connector/J driver)</strong>.</p>
+<p><img alt="Ejemplo de Driver MySQL" class="center" src="../img/imagen1.png" /></p>
 <p><strong>Si no aparece</strong>, agrégalo manualmente:</p>
 <ol>
 <li><em>Tools → Libraries → New Library…</em> → nombre <code>MySQL</code> → OK</li>
-<li>Botón <em>Add JAR/Folder…</em> → selecciona <code>mysql-connector-j-9.5.0.jar</code></li>
+</ol>
+<p><img alt="Ejemplo de Driver MySQL" class="center" src="../img/imagen2.png" /></p>
+<ol>
+<li>En el lado izquierdo del cuadro de dialogo, aparece una ventana con las Librerías agregadas a NetBeans. En el lado derecho aparece el nombre de la librería y la ruta del archivo con la librería. Nos desplazamos hacia abajo, hasta las librerías que empiezan por M, y observamos si aparece MySQL. En la imagen anterior, podemos observar como no aparecía. Para agregar el conector de MySQL a NetBeans, hacer clic en el botón New Library… y aparece un cuadro de dialogo como el siguiente, escribimos como nombre
+de librería MySQL y pulsamos OK: 
+<img alt="Ejemplo de Driver MySQL" class="center" src="../img/imagen3.png" /></li>
+</ol>
+<p>Botón <em>Add JAR/Folder…</em> → selecciona <code>mysql-connector-j-9.5.0.jar</code>
+<img alt="Ejemplo de Driver MySQL" class="center" src="../img/imagen4.png" /></p>
+<ol>
 <li>OK</li>
 </ol>
 <p>Una vez añadida la librería a NetBeans, añádela también al proyecto:
 botón derecho sobre <em>Libraries</em> del proyecto → <em>Add Library… → MySQL</em></p>
-<h3 id="22-en-vs-code">2.2 En VS Code</h3>
+<h3 id="1022-en-vs-code">10.2.2 En VS Code</h3>
 <ol>
-<li>Instala la extensión <strong>Extension Pack for Java</strong></li>
+<li>Instala la extensión <strong>Extension Pack for Java</strong>
+<img alt="Imagen de la Extensión Pack for Java" class="center" src="../img/ejemplo1.png" /></li>
 <li>Crea un proyecto: <code>Ctrl+Shift+P</code> → <em>Java: Create Java Project</em> → elige <strong>No build Tools</strong></li>
 <li>Copia <code>mysql-connector-j-9.5.0.jar</code> dentro de la carpeta <code>lib/</code></li>
-<li>En la pestaña <strong>Java Projects</strong>, sección <em>Referenced Libraries</em>, comprueba que aparece el <code>.jar</code>; si no, añádelo manualmente</li>
+<li>En la pestaña <strong>Java Projects</strong>, sección <em>Referenced Libraries</em>, comprueba que aparece el <code>.jar</code>; si no, añádelo manualmente
+<img alt="Imagen del .jar en Referenced Libraries" class="center" src="../img/ejemplo2.png" /></li>
 </ol>
 <hr />
-<h2 id="3-conectar-netbeans-a-una-base-de-datos-mysql">3. Conectar NetBeans a una base de datos MySQL</h2>
+<h2 id="103-conectar-netbeans-a-una-base-de-datos-mysql">10.3. Conectar NetBeans a una base de datos MySQL</h2>
 <p>Para gestionar la BD directamente desde el IDE:</p>
 <ol>
-<li>En <strong>Services</strong>, clic derecho sobre el conector MySQL → <em>Connect Using…</em></li>
+<li>En <strong>Services</strong>, clic derecho sobre el conector MySQL → <em>Connect Using…</em>
+<img alt="Ejemplo de Conexión a BD MySQL" class="center" src="../img/imagen5.png" /></li>
 <li>Rellena los datos:<ul>
 <li><strong>Driver:</strong> MySQL (Connector/J driver)</li>
 <li><strong>Database:</strong> nombre de la BD (p.ej. <code>prueba</code>)</li>
-<li><strong>Usuario:</strong> <code>alumno</code> / <strong>Contraseña:</strong> <code>alumno</code></li>
+<li><strong>Usuario:</strong> <code>alumno</code> / <strong>Contraseña:</strong> <code>alumno</code>
+<img alt="Ejemplo de Conexión a BD MySQL" class="center" src="../img/imagen6.png" /></li>
 </ul>
 </li>
 <li><em>Test Connection</em> → si es correcto → <em>Next → Next → Finish</em></li>
 </ol>
 <p>Desde esta conexión puedes crear tablas, ejecutar SQL y consultar datos directamente en el IDE sin salir de NetBeans.</p>
-<hr />
-<h2 id="4-acceso-a-mysql-desde-una-aplicacion-java">4. Acceso a MySQL desde una aplicación Java</h2>
-<h3 id="41-estructura-basica-de-conexion">4.1 Estructura básica de conexión</h3>
+<h2 id="_1"><img alt="Ejemplo de Conexión a BD MySQL" class="center" src="../img/imagen7.png" /></h2>
+<h2 id="104-acceso-a-mysql-desde-una-aplicacion-java">10.4. Acceso a MySQL desde una aplicación Java</h2>
+<h3 id="1041-estructura-basica-de-conexion">10.4.1 Estructura básica de conexión</h3>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.sql.*</span><span class="p">;</span>
 </code></pre></div>
 <p>Todo acceso a base de datos sigue este esquema:</p>
@@ -1324,7 +1943,7 @@ botón derecho sobre <em>Libraries</em> del proyecto → <em>Add Library… → 
 <p>No cerrar la conexión provoca <strong>fugas de recursos</strong> que pueden colapsar la base de datos. Usa siempre <code>conexion.close()</code> al terminar, idealmente en un bloque <code>finally</code>.</p>
 </div>
 <hr />
-<h3 id="42-consultar-registros-select">4.2 Consultar registros — <code>SELECT</code></h3>
+<h3 id="1042-consultar-registros-select">10.4.2 Consultar registros — <code>SELECT</code></h3>
 <p>Para consultas <code>SELECT</code> se usa <code>Statement</code> + <code>executeQuery()</code>, que devuelve un <code>ResultSet</code> (tabla de resultados):</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// Permite ejecutar sentencias SQL</span>
 <span class="n">Statement</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">conexion</span><span class="p">.</span><span class="na">createStatement</span><span class="p">();</span>
@@ -1385,7 +2004,7 @@ botón derecho sobre <em>Libraries</em> del proyecto → <em>Add Library… → 
 </table>
 </div>
 <hr />
-<h3 id="43-insertar-actualizar-y-eliminar-preparedstatement">4.3 Insertar, actualizar y eliminar — <code>PreparedStatement</code></h3>
+<h3 id="1043-insertar-actualizar-y-eliminar-preparedstatement">10.4.3 Insertar, actualizar y eliminar — <code>PreparedStatement</code></h3>
 <p>Para consultas <code>INSERT</code>, <code>UPDATE</code> y <code>DELETE</code> se usa <code>PreparedStatement</code> + <code>executeUpdate()</code>. Los <code>?</code> son <strong>parámetros</strong> que se asignan después para evitar inyección SQL:</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// INSERT</span>
 <span class="n">String</span><span class="w"> </span><span class="n">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;INSERT INTO Alumnos(id, nombre, nota) VALUES(?, ?, ?)&quot;</span><span class="p">;</span>
@@ -1416,7 +2035,7 @@ botón derecho sobre <em>Libraries</em> del proyecto → <em>Add Library… → 
 <p><code>executeUpdate()</code> devuelve un <code>int</code> con el número de filas afectadas. Útil para confirmar que la operación tuvo efecto.</p>
 </div>
 <hr />
-<h3 id="44-obtener-el-id-autogenerado">4.4 Obtener el ID autogenerado</h3>
+<h3 id="1044-obtener-el-id-autogenerado">10.4.4 Obtener el ID autogenerado</h3>
 <p>Cuando la clave primaria es <strong>auto_increment</strong> y necesitas saber el ID asignado al nuevo registro:</p>
 <div class="highlight"><pre><span></span><code><span class="n">String</span><span class="w"> </span><span class="n">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;INSERT INTO Alumnos(nombre, nota) VALUES(?, ?)&quot;</span><span class="p">;</span>
 <span class="n">PreparedStatement</span><span class="w"> </span><span class="n">ps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">conexion</span><span class="p">.</span><span class="na">prepareStatement</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span><span class="w"> </span><span class="n">Statement</span><span class="p">.</span><span class="na">RETURN_GENERATED_KEYS</span><span class="p">);</span>
@@ -1433,7 +2052,7 @@ botón derecho sobre <em>Libraries</em> del proyecto → <em>Add Library… → 
 <span class="p">}</span>
 </code></pre></div>
 <hr />
-<h3 id="45-ejecutar-procedimientos-almacenados">4.5 Ejecutar procedimientos almacenados</h3>
+<h3 id="1045-ejecutar-procedimientos-almacenados">10.4.5 Ejecutar procedimientos almacenados</h3>
 <p>Si tienes procedimientos almacenados en la BD, se llaman con <code>CallableStatement</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// Procedimiento en MySQL:</span>
 <span class="c1">// CALL InsertarAlumno(p_id, p_nombre, p_nota)</span>
@@ -1448,7 +2067,7 @@ botón derecho sobre <em>Libraries</em> del proyecto → <em>Add Library… → 
 <span class="n">cs</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
 </code></pre></div>
 <hr />
-<h2 id="5-clase-conexion-reutilizable">5. Clase <code>Conexion</code> reutilizable</h2>
+<h2 id="105-clase-conexion-reutilizable">10.5. Clase <code>Conexion</code> reutilizable</h2>
 <p>En lugar de repetir el código de conexión en cada método, lo habitual es crear una <strong>clase <code>Conexion</code></strong> con un método estático que devuelve la conexión ya abierta:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.sql.*</span><span class="p">;</span>
 
@@ -1592,7 +2211,7 @@ botón derecho sobre <em>Libraries</em> del proyecto → <em>Add Library… → 
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "content.code.copy", "navigation.expand"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "content.code.copy", "navigation.expand", "navigation.sticky"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
